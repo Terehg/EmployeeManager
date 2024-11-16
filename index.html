@@ -7,10 +7,41 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div id="app">
+    <header>
         <h1>Employee Manager</h1>
-        <!-- Contenido dinámico aquí -->
+    </header>
+    <main>
+        <section id="employee-actions">
+            <button id="add-employee">Agregar Empleado</button>
+            <button id="delete-selected" disabled>Eliminar Seleccionados</button>
+        </section>
+        <section id="employee-grid">
+            <table id="employees-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="select-all"></th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="employees-list"></tbody>
+            </table>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Agregar Empleado</h2>
+            <form id="employee-form">
+                <!-- Los campos del formulario se agregarán dinámicamente -->
+            </form>
+        </div>
     </div>
+   
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -28,6 +59,6 @@
     <script src="controllers/EmployeeController.js"></script>
     
     <!-- App -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 </html>
