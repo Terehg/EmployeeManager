@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Manager</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <header>
@@ -33,6 +34,7 @@
         </section>
     </main>
     <div id="modal" class="modal">
+        <span class="close-modal">&times;</span>
         <div class="modal-content">
             <h2 id="modal-title">Agregar Empleado</h2>
             <form id="employee-form">
@@ -42,21 +44,25 @@
     </div>
    
 
-
+   
+    
+    
+    
+    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <!-- Services -->
-    <script src="services/ApiService.js"></script>
+    <script src="services/ApiService.js" type="module"></script>
     
     <!-- Models -->
-    <script src="models/EmployeeModel.js"></script>
+    <script src="models/EmployeeModel.js" type="module"></script>
     
     <!-- Views -->
-    <script src="views/EmployeeView.js"></script>
+    <script src="views/EmployeeView.js" type="module"></script>
     
     <!-- Controllers -->
-    <script src="controllers/EmployeeController.js"></script>
+    <script src="controllers/EmployeeController.js" type="module"></script>
     
     <!-- App -->
     <script src="assets/js/app.js" type="module"></script>
